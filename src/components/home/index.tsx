@@ -90,8 +90,8 @@ const home = ({ setSelectedPage }: Props) => {
           <div className="mx-40">
             <div className="flex  items-center justify-start gap-20">
               <img src={SponsorRedbull} alt="redbull-sponsor" />
-              <img src={SponsorForbes} alt="redbull-forbes" />
-              <img src={SponsorFortune} alt="redbull-fortune" />
+              <img src={SponsorForbes} alt="forbes-sponser" />
+              <img src={SponsorFortune} alt="fortune-sponser" />
             </div>
           </div>
         </div>
