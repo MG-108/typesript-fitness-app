@@ -1,6 +1,6 @@
 import ActionButton from "@/shared/ActionButton";
 import HText from "@/shared/HText";
-import { BenefitType, SelectedPage } from "@/shared/types";
+import { BenefitType, SelectedPage } from "@/interfaces/types";
 import {
   HomeModernIcon,
   UserGroupIcon,
@@ -125,22 +125,23 @@ const Benefits = ({ setSelectedPage }: Props) => {
               }}
             >
               <p className="my-5">
-                Welcome to our gym! We are dedicated to providing a welcoming
-                and inclusive environment for people of all fitness levels. Our
-                facility is equipped with state-of-the-art equipment and a wide
-                variety of classes, including yoga, Pilates, spin, and
-                high-intensity interval training.
+                Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
+                egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
+                fames vitae vitae quis. Quis amet vulputate tincidunt at in
+                nulla nec. Consequat sed facilisis dui sit egestas ultrices
+                tellus. Ullamcorper arcu id pretium sapien proin integer nisl.
+                Felis orci diam odio.
               </p>
               <p className="mb-5">
-                Our experienced trainers are available to help you set and
-                achieve your fitness goals. Whether you're a seasoned athlete or
-                just starting your fitness journey, we have something for
-                everyone. We hope to see you soon at our gym!
+                Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
+                tellus quam porttitor. Mauris velit euismod elementum arcu neque
+                facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
+                enim mattis odio in risus nunc.
               </p>
             </motion.div>
             {/* BUTTON */}
-            <div className="relative">
-              <div className="before-bottom-20 before:absolute before:right-40 before:z-[-1] before:content-sparkles">
+            <div className="relative mt-16">
+              <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
                 <ActionButton setSelectedPage={setSelectedPage}>
                   Join Now
                 </ActionButton>
