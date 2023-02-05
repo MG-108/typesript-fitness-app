@@ -13,6 +13,7 @@ function App() {
   );
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
 
+  // track the  scroll for the dropdrown nav
   useEffect(() => {
     const handleSroll = () => {
       if (window.scrollY === 0) {
@@ -26,7 +27,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-gray-20">
+    <div className="app relative bg-gray-20">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}

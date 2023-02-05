@@ -64,9 +64,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               </div>
             ) : (
               // on mobile
+              //open menu
               <button
                 className="rounded-full bg-secondary-500 p-2"
-                onClick={() => setIsMenuToggled(!isMenuToggled)}
+                onClick={() =>
+                  setIsMenuToggled((prevIsMenuToggled) => !prevIsMenuToggled)
+                }
               >
                 <Bars3Icon className="h-6 w-6 text-white" />
               </button>
@@ -76,11 +79,19 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
       </div>
 
       {/* {MOBILE MENU MODAL} */}
-      {!isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-2xl">
+      {!isAboveMediumScreens && (
+        <div
+          className={`smooth-transition fixed  z-40 h-full w-[300px] bg-primary-100 drop-shadow-2xl ${
+            isMenuToggled ? "right-0" : "-right-full"
+          }`}
+        >
           {/* CLOSE ICON */}
           <div className="flex justify-end p-12">
-            <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+            <button
+              onClick={() =>
+                setIsMenuToggled((prevIsMenuToggled) => !prevIsMenuToggled)
+              }
+            >
               <XMarkIcon className="h-8 w-8 text-gray-400" />
             </button>
           </div>
