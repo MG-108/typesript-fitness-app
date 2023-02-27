@@ -1,8 +1,5 @@
 import image1 from "@/assets/image1.png";
-import image2 from "@/assets/image2.png";
-import image3 from "@/assets/image3.png";
-import image4 from "@/assets/image4.png";
-import image5 from "@/assets/image5.png";
+
 import image6 from "@/assets/image6.png";
 import { ClassType } from "@/interfaces/types";
 
@@ -15,23 +12,23 @@ export const classes: Array<ClassType> = [
   },
   {
     name: "Yoga Classes",
-    image: image2,
+    image: image6,
   },
   {
     name: "Ab Core Classes",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: image3,
+    image: image6,
   },
   {
     name: "Adventure Classes",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: image4,
+    image: image6,
   },
   {
     name: "Fitness Classes",
-    image: image5,
+    image: image6,
   },
   {
     name: "Training Classes",
